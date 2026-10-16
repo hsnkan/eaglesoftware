@@ -29,16 +29,14 @@ body {
   background: linear-gradient(135deg, #f6d776 0%, #d4af37 50%, #aa820a 100%);
 }
 .bg-brushed {
-  background:
-    radial-gradient(circle at 50% 20%, rgba(18, 214, 223, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-    linear-gradient(180deg, #0b0e14 0%, #05070a 100%);
-}
-.cyber-grid {
-  background-size: 40px 40px;
+  background-color: #07090d;
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 50% 20%, rgba(18, 214, 223, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #0b0e14 0%, #05070a 100%);
+  background-size: 40px 40px, 40px 40px, auto, auto, auto;
 }
 .product-card {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);

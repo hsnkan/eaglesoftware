@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-brushed min-h-screen flex flex-col justify-between cyber-grid">
+      <body className="bg-brushed min-h-screen flex flex-col justify-between">
         <SiteKabuk>{children}</SiteKabuk>
       </body>
     </html>
