@@ -6,8 +6,8 @@ export default function VizyonPage() {
   return (
     <SiteKabuk>
       <section className="sayfa">
-        <p className="kicker">VİZYON</p>
-        <h1>Her işletmenin kendi adıyla çalışan yazılımı olsun.</h1>
+        <p className="alt">VİZYON</p>
+        <h1>Vizyon</h1>
         <p className="lead">
           Kartvizitteki kartal ve kod çizgisi bunu anlatır: yazılım gösteriş için
           değil, işletmenin işini taşımak için vardır. Eagle Software’in yönü,

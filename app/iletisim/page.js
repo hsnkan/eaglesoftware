@@ -6,7 +6,7 @@ export default function IletisimPage() {
   return (
     <SiteKabuk>
       <section className="sayfa">
-        <p className="kicker">İLETİŞİM</p>
+        <p className="alt">İLETİŞİM</p>
         <h1>Eagle Software</h1>
         <p className="lead">Freelance yazılım hizmetleri. Kartvizitteki hatlar:</p>
         <div className="kartlar">

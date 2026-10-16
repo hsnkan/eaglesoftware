@@ -91,7 +91,7 @@ const butonStil = {
   border: 0,
   borderRadius: 12,
   padding: "12px 14px",
-  background: "#f59e0b",
+  background: "#e8c872",
   color: "#0f172a",
   fontWeight: 800,
   cursor: "pointer",

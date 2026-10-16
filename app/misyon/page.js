@@ -6,8 +6,8 @@ export default function MisyonPage() {
   return (
     <SiteKabuk>
       <section className="sayfa">
-        <p className="kicker">MİSYON</p>
-        <h1>İşletmenin işini sade yazılıma taşımak.</h1>
+        <p className="alt">MİSYON</p>
+        <h1>Misyon</h1>
         <p className="lead">
           Eagle Software, freelance yazılım hizmeti verir. Amaç, işletmenin kayıt,
           ödeme ve personel takibini dağınık defterlerden çıkarıp tek programda
