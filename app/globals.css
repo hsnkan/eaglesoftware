@@ -30,7 +30,7 @@ img { max-width: 100%; display: block; }
   padding: 16px 6vw;
 }
 .marka { display: flex; align-items: center; gap: 10px; font-weight: 800; color: #e8c872; }
-.marka img { width: 40px; height: 40px; border-radius: 50%; }
+.marka img { width: 44px; height: 44px; object-fit: contain; }
 .menu { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; font-weight: 700; color: #d7deea; }
 .menu a:hover { color: #49e0ea; }
 
@@ -41,7 +41,7 @@ img { max-width: 100%; display: block; }
   align-items: start;
   padding: 24px 6vw 48px;
 }
-.amblem { width: 92px; height: 92px; border-radius: 50%; }
+.amblem { width: 168px; height: auto; }
 .sahne h1 {
   margin: 12px 0 4px;
   font-size: clamp(32px, 5vw, 52px);
