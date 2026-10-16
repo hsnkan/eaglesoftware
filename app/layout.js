@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Eagle Software",
   description:
-    "Eagle Software salon ve kurs yönetim yazılımı. Müşteri oturumunu eaglesoftware.com.tr üzerinde deneyin.",
+    "Eagle Software, işletmelere özel yazılım kurar. Üye sistemi bu siteden denenebilir.",
 };
 
 export default function RootLayout({ children }) {
