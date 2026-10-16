@@ -1,0 +1,31 @@
+{
+  "kullanicilar": [
+    {
+      "id": "m1",
+      "rol": "musteri",
+      "email": "ayse@ornek.com",
+      "adSoyad": "Ayşe Yılmaz",
+      "sifreTuz": "musteri-tuz",
+      "sifreHash": "133f588e39ea720c477ef7fffab52b76003b48a5746f5f79e2455d3652ec4aae",
+      "profil": {
+        "grup": "Yetişkin Cimnastik",
+        "telefon": "0532 000 00 01",
+        "uyelik": "Aktif",
+        "kayitTarihi": "2026-09-01",
+        "odemeler": [
+          { "tarih": "2026-09-01", "tutar": 2500, "aciklama": "İlk kayıt ödemesi" },
+          { "tarih": "2026-10-01", "tutar": 2500, "aciklama": "Ekim aidatı" }
+        ]
+      }
+    },
+    {
+      "id": "p1",
+      "rol": "personel",
+      "email": "gorevli@ornek.com",
+      "adSoyad": "Mehmet Demir",
+      "unvan": "Görevli",
+      "sifreTuz": "personel-tuz",
+      "sifreHash": "449ee5587a4f9d33c2ee98da81a3fa4911d5241cfab528b53b2b61d358550737"
+    }
+  ]
+}
