@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function GirisFormu({ gomulu = false }) {
+export default function GirisFormu() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [sifre, setSifre] = useState("");
@@ -35,8 +35,8 @@ export default function GirisFormu({ gomulu = false }) {
   }
 
   return (
-    <form onSubmit={gonder} style={{ display: "grid", gap: 12 }}>
-      <label style={{ display: "grid", gap: 6, fontSize: 13, fontWeight: 700 }}>
+    <form onSubmit={gonder} className="space-y-3">
+      <label className="block text-xs font-medium text-gray-300">
         E-posta
         <input
           type="email"
@@ -44,23 +44,25 @@ export default function GirisFormu({ gomulu = false }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="ornek@posta.com"
-          style={inputStil}
+          className="mt-1 w-full px-4 py-3 rounded-xl bg-brand-dark border border-brand-border focus:border-brand-gold focus:outline-none text-sm text-white"
         />
       </label>
-      <label style={{ display: "grid", gap: 6, fontSize: 13, fontWeight: 700 }}>
+      <label className="block text-xs font-medium text-gray-300">
         Şifre
         <input
           type="password"
           required
           value={sifre}
           onChange={(e) => setSifre(e.target.value)}
-          style={inputStil}
+          className="mt-1 w-full px-4 py-3 rounded-xl bg-brand-dark border border-brand-border focus:border-brand-gold focus:outline-none text-sm text-white"
         />
       </label>
-      {hata ? (
-        <p style={{ margin: 0, color: "#fecaca", fontSize: 13, fontWeight: 700 }}>{hata}</p>
-      ) : null}
-      <button type="submit" disabled={yukleniyor} style={butonStil}>
+      {hata ? <p className="text-xs font-bold text-red-300">{hata}</p> : null}
+      <button
+        type="submit"
+        disabled={yukleniyor}
+        className="w-full py-3 rounded-xl font-title text-xs font-bold uppercase text-black gold-gradient-bg disabled:opacity-60"
+      >
         {yukleniyor ? "Giriş yapılıyor..." : "Giriş yap"}
       </button>
       <button
@@ -70,29 +72,10 @@ export default function GirisFormu({ gomulu = false }) {
           setEmail("ayse@ornek.com");
           setSifre("musteri123");
         }}
-        style={{ ...butonStil, background: "transparent", color: "#f3d27a", border: "1px solid #d4af37" }}
+        className="w-full py-3 rounded-xl text-xs font-bold uppercase text-brand-gold border border-brand-gold/40"
       >
         Deneme müşteri bilgilerini doldur
       </button>
     </form>
   );
 }
-
-const inputStil = {
-  width: "100%",
-  border: "1px solid #334155",
-  background: "#020617",
-  color: "#f8fafc",
-  borderRadius: 12,
-  padding: "12px 14px",
-};
-
-const butonStil = {
-  border: 0,
-  borderRadius: 12,
-  padding: "12px 14px",
-  background: "#e8c872",
-  color: "#0f172a",
-  fontWeight: 800,
-  cursor: "pointer",
-};

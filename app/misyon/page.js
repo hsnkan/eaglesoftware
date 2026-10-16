@@ -1,24 +1,7 @@
-import SiteKabuk from "../components/SiteKabuk";
+import Hakkimizda from "../components/Hakkimizda";
 
-export const metadata = { title: "Misyon · Eagle Software" };
+export const metadata = { title: "Misyon & Vizyon · Eagle Software" };
 
 export default function MisyonPage() {
-  return (
-    <SiteKabuk>
-      <section className="sayfa">
-        <p className="alt">MİSYON</p>
-        <h1>Misyon</h1>
-        <p className="lead">
-          Eagle Software, freelance yazılım hizmeti verir. Amaç, işletmenin kayıt,
-          ödeme ve personel takibini dağınık defterlerden çıkarıp tek programda
-          toplamak ve bunu işletmenin kendi adıyla çalışır hale getirmektir.
-        </p>
-        <p className="lead">
-          Müşteri kendi oturumundan yalnızca kendi bilgisini görür. Personel,
-          iş yerinin yönetim programına bağlanır. İletişim de kartvizitteki gibi
-          doğrudan kurulur: telefon ve e-posta.
-        </p>
-      </section>
-    </SiteKabuk>
-  );
+  return <Hakkimizda />;
 }

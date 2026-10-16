@@ -1,40 +1,25 @@
-import SiteKabuk from "../components/SiteKabuk";
+import UrunListesi from "../components/UrunListesi";
 
-export const metadata = { title: "Ürünler · Eagle Software" };
+export const metadata = { title: "Ürünlerimiz · Eagle Software" };
 
 export default function UrunlerPage() {
   return (
-    <SiteKabuk>
-      <section className="sayfa">
-        <p className="alt">ÜRÜNLER</p>
-        <h1>Programlar</h1>
-        <p className="lead">
-          İki program vardır. Müşteri kendi bilgisine girer. Personel iş yerinin
-          yönetim programına bağlanır.
-        </p>
-        <div className="kartlar">
-          <article className="ozellik">
-            <h2>Eagle Üye Sistemi</h2>
-            <p>
-              Salon ve kurs müşterisi içindir. Giriş yapan kişi kendi üyelik,
-              grup ve ödeme bilgilerini görür. Başka bir müşterinin kaydı açılmaz.
-            </p>
-            <p>
-              Deneme ana sayfadaki müşteri girişindedir: ayse@ornek.com / musteri123
-            </p>
-            <p><a className="deneme" href="/">Müşteri girişine dön</a></p>
-          </article>
-          <article className="ozellik">
-            <h2>İş yeri yönetim programı</h2>
-            <p>
-              Personel içindir. Öğrenci kaydı, aidat, kasa ve yoklama bu programda
-              tutulur. Personel hesabı açılınca programa bağlanır.
-            </p>
-            <p>Personel denemesi: gorevli@ornek.com / personel123</p>
-            <p>Giriş ana sayfadaki formdan yapılır.</p>
-          </article>
+    <section className="py-12 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-card border border-brand-gold/30 text-xs font-semibold text-brand-gold mb-3">
+            <i className="fa-solid fa-box-open" /> Ürün & Yazılım Portföyümüz
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-black font-title text-white">
+            Geliştirdiğimiz <span className="gold-gradient-text">Özel Yazılımlar</span>
+          </h2>
+          <p className="text-gray-400 mt-3 text-sm sm:text-base">
+            Sektörlerin ihtiyaçlarına yönelik olarak tasarladığımız, yüksek
+            verimlilik sağlayan yazılım ürünlerimizi inceleyebilirsiniz.
+          </p>
         </div>
-      </section>
-    </SiteKabuk>
+        <UrunListesi />
+      </div>
+    </section>
   );
 }

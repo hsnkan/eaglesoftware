@@ -1,16 +1,31 @@
 import "./globals.css";
+import SiteKabuk from "./components/SiteKabuk";
 
 export const metadata = {
-  title: "Eagle Software",
+  title: "EAGLE SOFTWARE - Freelance Yazılım Hizmetleri",
   description:
-    "Eagle Software, işletmelere özel yazılım kurar. Üye sistemi bu siteden denenebilir.",
+    "Eagle Software olarak kurumsal ihtiyaçlarınıza özel, yüksek hızlı, güvenli ve modern yazılım sistemleri geliştiriyoruz.",
   icons: { icon: "/eagle-logo.png" },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-brushed min-h-screen flex flex-col justify-between cyber-grid">
+        <SiteKabuk>{children}</SiteKabuk>
+      </body>
     </html>
   );
 }
