@@ -30,7 +30,14 @@ img { max-width: 100%; display: block; }
   padding: 16px 6vw;
 }
 .marka { display: flex; align-items: center; gap: 10px; font-weight: 800; color: #e8c872; }
-.marka img { width: 44px; height: 44px; object-fit: contain; }
+.marka img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #e8c872;
+}
 .menu { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; font-weight: 700; color: #d7deea; }
 .menu a:hover { color: #49e0ea; }
 
@@ -41,7 +48,15 @@ img { max-width: 100%; display: block; }
   align-items: start;
   padding: 24px 6vw 48px;
 }
-.amblem { width: 168px; height: auto; }
+.amblem {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #e8c872;
+  box-shadow: 0 0 0 4px #121418, 0 0 28px rgba(232, 200, 114, 0.35);
+}
 .sahne h1 {
   margin: 12px 0 4px;
   font-size: clamp(32px, 5vw, 52px);
