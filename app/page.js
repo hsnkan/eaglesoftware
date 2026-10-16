@@ -62,35 +62,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="w-full max-w-md bg-brand-card/90 rounded-2xl p-4 border border-brand-gold/30 shadow-2xl backdrop-blur-md relative overflow-hidden group">
-              <div className="flex items-center justify-between mb-3 border-b border-brand-border/60 pb-2">
-                <span className="text-xs font-title font-semibold text-brand-gold flex items-center gap-1.5">
-                  <i className="fa-solid fa-id-card" /> ŞİRKET KARTVİZİTİ
-                </span>
-                <span className="text-[10px] text-brand-cyan uppercase tracking-wider font-mono">
-                  EAGLE SOFTWARE
-                </span>
-              </div>
-              <div className="rounded-xl overflow-hidden border border-brand-border/80 shadow-inner group-hover:border-brand-gold/50 transition-colors">
-                <img src="/kartvizit.png" alt="Eagle Software Kartvizit" className="w-full h-auto object-cover" />
-              </div>
-              <div className="mt-4 grid grid-cols-1 gap-2 text-xs">
-                <a
-                  href="tel:+905377329384"
-                  className="flex items-center gap-2.5 p-2 rounded-lg bg-brand-dark/60 hover:bg-brand-dark text-gray-200 hover:text-brand-gold transition-colors"
-                >
-                  <i className="fa-solid fa-phone text-brand-gold" />
-                  <span className="font-mono">0537 732 93 84</span>
-                </a>
-                <a
-                  href="mailto:eaglesoftware.global@gmail.com"
-                  className="flex items-center gap-2.5 p-2 rounded-lg bg-brand-dark/60 hover:bg-brand-dark text-gray-200 hover:text-brand-cyan transition-colors"
-                >
-                  <i className="fa-solid fa-envelope text-brand-cyan" />
-                  <span className="font-mono truncate">eaglesoftware.global@gmail.com</span>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
