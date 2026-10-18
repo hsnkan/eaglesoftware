@@ -4,10 +4,10 @@ import { useState } from "react";
 import GirisFormu from "./GirisFormu";
 
 const FILTRELER = [
-  { id: "all", label: "Tüm Ürünler" },
-  { id: "erp", label: "Masaüstü & ERP" },
-  { id: "web", label: "Web & E-Ticaret" },
-  { id: "mobile", label: "Mobil Uygulamalar" },
+  { id: "all", label: "Tüm Modüller" },
+  { id: "panel", label: "İş Yeri Paneli" },
+  { id: "yoklama", label: "Yoklama" },
+  { id: "uye", label: "Üye & İletişim" },
 ];
 
 function Kart({ kategori, ikon, etiket, renk, baslik, yazi, etiketler, surum, wa, children }) {
@@ -87,20 +87,21 @@ export default function UrunListesi() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {goster("web") ? (
+        {goster("uye") ? (
           <div className="product-card bg-brand-card rounded-2xl border border-brand-gold/40 overflow-hidden flex flex-col lg:col-span-3">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-6">
                 <span className="bg-brand-gold/20 text-brand-gold text-[10px] font-title font-bold px-2.5 py-1 rounded-full border border-brand-gold/30">
-                  WEB / ÜYE OTURUMU
+                  WEB / İŞ YERİ ADRESİ
                 </span>
-                <h3 className="text-xl font-bold font-title text-white mt-3 mb-2">Eagle Üye Sistemi</h3>
+                <h3 className="text-xl font-bold font-title text-white mt-3 mb-2">Eagle İş Yeri Paneli</h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Salon ve kurs müşterisi kendi üyelik, grup ve ödeme bilgilerini
-                  görür. Personel girişi iş yeri yönetim programına bağlanır.
+                  Kurs, otel ve iş yeri yönetimi kendi internet adresinden açılan
+                  web panelde çalışır. Üye kendi kaydını ve ödemelerini görür.
+                  Personel girişi yönetim programına bağlanır.
                 </p>
                 <p className="text-xs text-brand-gold mb-4">
-                  Deneme: ayse@ornek.com / musteri123
+                  Üye denemesi: ayse@ornek.com / musteri123
                 </p>
               </div>
               <div className="p-6 bg-brand-dark/50">
@@ -110,93 +111,107 @@ export default function UrunListesi() {
           </div>
         ) : null}
 
-        {goster("erp") ? (
+        {goster("panel") ? (
           <Kart
-            kategori="erp"
-            ikon="fa-chart-line"
-            etiket="MASAÜSTÜ / ERP"
+            kategori="panel"
+            ikon="fa-user-graduate"
+            etiket="ÖĞRENCİ"
             renk="gold"
-            baslik="Eagle ERP Pro"
-            yazi="KOBİ'ler ve büyük işletmeler için stok, cari, fatura, gelir-gider ve personel yönetimini tek ekrandan sunan kapsamlı ERP sistemi."
-            etiketler={["C# / .NET", "MSSQL", "Raporlama"]}
-            surum="v3.4 Sürüm"
-            wa="https://wa.me/905377329384?text=Merhaba,%20Eagle%20ERP%20Pro%20hakkında%20bilgi%20almak%20istiyorum."
+            baslik="Öğrenci Yönetimi"
+            yazi="Kayıt, grup, arşiv ve kart eşleştirme. Üye listesi işletmenin kendi internet adresindeki web panelde durur."
+            etiketler={["Kayıt", "Grup", "Arşiv"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20web%20tabanlı%20öğrenci%20yönetimi%20hakkında%20bilgi%20almak%20istiyorum."
           />
         ) : null}
 
-        {goster("web") ? (
+        {goster("yoklama") ? (
           <Kart
-            kategori="web"
-            ikon="fa-cart-shopping"
-            etiket="WEB & B2B"
+            kategori="yoklama"
+            ikon="fa-id-card"
+            etiket="YOKLAMA"
             renk="cyan"
-            baslik="Eagle Commerce"
-            yazi="Özel ödeme entegrasyonları, pazar yeri senkronizasyonları ve yüksek hıza sahip özelleştirilebilir E-Ticaret platformu."
-            etiketler={["React / Next.js", "Node.js", "Iyzico/Sanal POS"]}
-            surum="v2.1 Sürüm"
-            wa="https://wa.me/905377329384?text=Merhaba,%20Eagle%20Commerce%20hakkında%20bilgi%20almak%20istiyorum."
+            baslik="NFC / Kartlı Yoklama"
+            yazi="Öğrenci yoklaması kart okuyucu ile alınır. Aynı ekrandan ders katılımı iş yerine ait adreste tutulur."
+            etiketler={["Kart okuyucu", "Yoklama kaydı"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20kartlı%20yoklama%20hakkında%20bilgi%20almak%20istiyorum."
           />
         ) : null}
 
-        {goster("mobile") ? (
+        {goster("panel") ? (
           <Kart
-            kategori="mobile"
-            ikon="fa-mobile-screen-button"
-            etiket="MOBİL UYGULAMA"
+            kategori="panel"
+            ikon="fa-wallet"
+            etiket="KASA"
             renk="gold"
-            baslik="Eagle Field Mobile"
-            yazi="Saha satış ekipleri, teknik servisler ve depo yönetimi için iOS ve Android uyumlu, çevrimdışı çalışabilen mobil uygulama."
-            etiketler={["Flutter", "REST API", "GPS / Barkod"]}
-            surum="v1.8 Sürüm"
-            wa="https://wa.me/905377329384?text=Merhaba,%20Eagle%20Field%20Mobile%20hakkında%20bilgi%20almak%20istiyorum."
+            baslik="Aidat ve Kasa"
+            yazi="Tahsilat, aidat ve kasa hareketleri tek panelde izlenir. Üye kendi ödeme dökümünü üye oturumundan görür."
+            etiketler={["Tahsilat", "Aidat", "Kasa"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20aidat%20ve%20kasa%20takibi%20hakkında%20bilgi%20almak%20istiyorum."
           />
         ) : null}
 
-        {goster("erp") ? (
+        {goster("yoklama") ? (
           <Kart
-            kategori="erp"
-            ikon="fa-hotel"
-            etiket="OTOMASYON"
+            kategori="yoklama"
+            ikon="fa-chalkboard-user"
+            etiket="GÖREVLİ"
             renk="cyan"
-            baslik="Eagle Otel & Rezervasyon"
-            yazi="Otel, pansiyon ve konaklama tesisleri için oda takibi, adisyon, müşteri kayıt ve Kimlik Bildirim Sistemi (KBS) entegrasyonlu otomasyon."
-            etiketler={["Desktop / Cloud", "KBS Entegre"]}
-            surum="v4.0 Sürüm"
-            wa="https://wa.me/905377329384?text=Merhaba,%20Otel%20Otomasyonu%20hakkında%20bilgi%20almak%20istiyorum."
+            baslik="Görevli Takip"
+            yazi="Öğretmen ve görevli giriş-çıkışı ile çalışma süresi, iş yeri panelinden takip edilir."
+            etiketler={["Giriş-çıkış", "Çalışma süresi"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20görevli%20takibi%20hakkında%20bilgi%20almak%20istiyorum."
           />
         ) : null}
 
-        {goster("web") ? (
+        {goster("uye") ? (
           <Kart
-            kategori="web"
-            ikon="fa-hospital-user"
-            etiket="SAĞLIK / RANDEVU"
+            kategori="uye"
+            ikon="fa-bullhorn"
+            etiket="DUYURU"
             renk="gold"
-            baslik="Eagle Randevu & Müşteri"
-            yazi="Klinikler, güzellik merkezleri ve danışmanlık firmaları için SMS hatırlatmalı online randevu ve danışan takip sistemi."
-            etiketler={["Web Panel", "SMS Gateway"]}
-            surum="v1.5 Sürüm"
-            wa="https://wa.me/905377329384?text=Merhaba,%20Randevu%20Sistemi%20hakkında%20bilgi%20almak%20istiyorum."
+            baslik="Duyurular ve WhatsApp"
+            yazi="İş yeri, kayıtlı üyelere duyuru ve toplu mesaj kampanyasını kendi panelinden hazırlar."
+            etiketler={["Duyuru", "WhatsApp"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20duyuru%20ve%20WhatsApp%20hakkında%20bilgi%20almak%20istiyorum."
+          />
+        ) : null}
+
+        {goster("panel") ? (
+          <Kart
+            kategori="panel"
+            ikon="fa-file-lines"
+            etiket="RAPOR"
+            renk="cyan"
+            baslik="Raporlar ve İşlem Geçmişi"
+            yazi="Yoklama özeti ve panelde kim ne yaptı kaydı, iş yerinin kendi adresindeki raporda durur."
+            etiketler={["Yoklama raporu", "İşlem geçmişi"]}
+            surum="İş yeri paneli"
+            wa="https://wa.me/905377329384?text=Merhaba,%20raporlar%20hakkında%20bilgi%20almak%20istiyorum."
           />
         ) : null}
 
         {filtre === "all" ? (
           <div className="product-card bg-gradient-to-br from-brand-card via-brand-dark to-brand-card rounded-2xl border-2 border-dashed border-brand-gold/50 p-8 flex flex-col items-center justify-center text-center">
             <div className="w-16 h-16 rounded-full bg-brand-gold/10 text-brand-gold flex items-center justify-center text-3xl mb-4">
-              <i className="fa-solid fa-code" />
+              <i className="fa-solid fa-globe" />
             </div>
-            <h3 className="text-xl font-bold font-title text-white mb-2">Özel Projeniz Mi Var?</h3>
+            <h3 className="text-xl font-bold font-title text-white mb-2">İş yerinize özel adres</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Aklınızdaki fikri veya ihtiyacınıza özel yazılım talebinizi bize iletin,
-              en uygun mimari ile hayata geçirelim.
+              Kurs, otel veya iş yeri kendi internet adresini alır. Logo, açılacak
+              modüller ve şube ayrımı kurulumda netleşir. Bir şubenin kaydı diğerine yazılmaz.
             </p>
             <a
-              href="https://wa.me/905377329384?text=Merhaba,%20özel%20yazılım%20projem%20için%20görüşmek%20istiyorum."
+              href="https://wa.me/905377329384?text=Merhaba,%20iş%20yerim%20için%20internet%20adresi%20ve%20web%20paneli%20kurulumu%20görüşmek%20istiyorum."
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-xl font-title text-xs font-bold uppercase text-black gold-gradient-bg hover:brightness-110 transition-all shadow-lg"
             >
-              Özel Yazılım Talebi İlet
+              Kurumsal Başvuru
             </a>
           </div>
         ) : null}

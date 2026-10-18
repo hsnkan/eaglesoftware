@@ -38,7 +38,7 @@ export default function SiteKabuk({ children }) {
                 EAGLE <span className="gold-gradient-text">SOFTWARE</span>
               </span>
               <span className="text-[10px] tracking-[0.2em] text-brand-cyan font-semibold uppercase block mt-1">
-                Freelance Yazılım
+                Kurumsal Yazılım
               </span>
             </div>
           </Link>
@@ -63,14 +63,12 @@ export default function SiteKabuk({ children }) {
           </nav>
 
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href="https://wa.me/905377329384"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              href="/iletisim"
               className="px-4 py-2 rounded-lg text-xs font-bold font-title tracking-wider uppercase text-black gold-gradient-bg hover:brightness-110 transition-all flex items-center gap-2 shadow-lg shadow-brand-gold/20"
             >
-              <i className="fa-brands fa-whatsapp text-sm" /> Hızlı Teklif Al
-            </a>
+              <i className="fa-solid fa-building text-sm" /> Kurumsal İletişim
+            </Link>
           </div>
 
           <button
@@ -94,14 +92,13 @@ export default function SiteKabuk({ children }) {
                 <i className={`fa-solid ${l.icon} mr-2`} /> {l.label}
               </Link>
             ))}
-            <a
-              href="https://wa.me/905377329384"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              href="/iletisim"
+              onClick={() => setAcik(false)}
               className="w-full text-center px-4 py-3 rounded-lg text-xs font-bold font-title uppercase text-black gold-gradient-bg block mt-4"
             >
-              <i className="fa-brands fa-whatsapp mr-1 text-sm" /> WhatsApp İletişim
-            </a>
+              <i className="fa-solid fa-building mr-1 text-sm" /> Kurumsal İletişim
+            </Link>
           </div>
         ) : null}
       </header>
@@ -124,7 +121,7 @@ export default function SiteKabuk({ children }) {
                   EAGLE <span className="gold-gradient-text">SOFTWARE</span>
                 </div>
                 <div className="text-xs text-brand-cyan uppercase tracking-widest mt-0.5">
-                  Freelance Yazılım Hizmetleri
+                  Kurumsal Yazılım Çözümleri
                 </div>
               </div>
             </div>

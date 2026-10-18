@@ -2,9 +2,9 @@ import "./globals.css";
 import SiteKabuk from "./components/SiteKabuk";
 
 export const metadata = {
-  title: "EAGLE SOFTWARE - Freelance Yazılım Hizmetleri",
+  title: "EAGLE SOFTWARE - Kurumsal Yazılım Çözümleri",
   description:
-    "Eagle Software olarak kurumsal ihtiyaçlarınıza özel, yüksek hızlı, güvenli ve modern yazılım sistemleri geliştiriyoruz.",
+    "Eagle Software, kurs, otel ve iş yeri yönetimi için internet adresinden açılan kurumsal web çözümleri sunar.",
   icons: { icon: "/eagle-logo.png" },
 };
 

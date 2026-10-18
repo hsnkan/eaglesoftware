@@ -8,44 +8,43 @@ export default function HomePage() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/30 text-xs font-medium text-brand-gold">
               <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
-              Geleceğin Yazılım Çözümleri Burada
+              Eagle Software · Kurumsal yazılım şirketi
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black font-title leading-tight tracking-tight text-white">
-              YÜKSEK PERFORMANSLI <br />
-              <span className="gold-gradient-text">YAZILIM ÇÖZÜMLERİ</span>
+              İŞ YERİNİZ <br />
+              <span className="gold-gradient-text">KENDİ İNTERNET ADRESİNDE</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              <strong>Eagle Software</strong> olarak kurumsal ihtiyaçlarınıza özel,
-              yüksek hızlı, güvenli ve modern masaüstü, web ve mobil yazılım
-              sistemleri geliştiriyoruz. Projelerinizi en son teknolojilerle
-              gerçeğe dönüştürüyoruz.
+              <strong>Eagle Software</strong>, kurs, otel ve iş yeri yönetimi için
+              kurumsal web çözümleri sunar. Her işletme kendi internet adresinden
+              kayıt, yoklama, görevli ve kasa süreçlerini yönetir.
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <Link
                 href="/urunler"
                 className="px-7 py-3.5 rounded-xl font-title text-xs font-bold uppercase tracking-wider text-black gold-gradient-bg hover:scale-105 transition-all shadow-lg shadow-brand-gold/25 flex items-center gap-2"
               >
-                <i className="fa-solid fa-rocket" /> Ürünlerimizi İnceleyin
+                <i className="fa-solid fa-layer-group" /> Çözümlerimizi İnceleyin
               </Link>
               <Link
                 href="/iletisim"
                 className="px-7 py-3.5 rounded-xl font-title text-xs font-bold uppercase tracking-wider text-white bg-brand-card hover:bg-brand-border border border-brand-border hover:border-brand-cyan transition-all flex items-center gap-2"
               >
-                <i className="fa-solid fa-paper-plane" /> Bize Ulaşın
+                <i className="fa-solid fa-building" /> Kurumsal İletişim
               </Link>
             </div>
             <div className="pt-8 border-t border-brand-border/60 grid grid-cols-3 gap-4 text-center lg:text-left">
               <div>
-                <div className="text-2xl sm:text-3xl font-black font-title gold-gradient-text">50+</div>
-                <div className="text-xs text-gray-400 font-medium mt-1">Tamamlanan Proje</div>
+                <div className="text-2xl sm:text-3xl font-black font-title gold-gradient-text">Web</div>
+                <div className="text-xs text-gray-400 font-medium mt-1">Kurulum gerektirmez</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-black font-title text-brand-cyan">%99.9</div>
-                <div className="text-xs text-gray-400 font-medium mt-1">Müşteri Memnuniyeti</div>
+                <div className="text-2xl sm:text-3xl font-black font-title text-brand-cyan">1 adres</div>
+                <div className="text-xs text-gray-400 font-medium mt-1">Her iş yerine ayrı</div>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-black font-title gold-gradient-text">7/24</div>
-                <div className="text-xs text-gray-400 font-medium mt-1">Teknik Destek</div>
+                <div className="text-xs text-gray-400 font-medium mt-1">Panel erişimi</div>
               </div>
             </div>
           </div>
@@ -65,39 +64,69 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-20">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+            <div>
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase text-brand-gold mb-2">Profesyonel çözümler</p>
+              <h2 className="text-2xl sm:text-3xl font-black font-title text-white">Sektörünüze göre yönetim paneli</h2>
+            </div>
+            <p className="text-sm text-gray-400 max-w-md">
+              Aynı kurumsal altyapı, işletmenin işine göre açılır. Her çözüm kendi internet adresinde çalışır.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Cozum no="01" ikon="fa-graduation-cap" baslik="Kurs yönetimi" yazi="Öğrenci kaydı, grup, yoklama, aidat ve üye ekranı tek panelde toplanır." />
+            <Cozum no="02" ikon="fa-hotel" baslik="Otel yönetimi" yazi="Konaklama işletmesinin kayıt, görevli ve kasa işleri kendi adresindeki panelde yürür." />
+            <Cozum no="03" ikon="fa-briefcase" baslik="İş yeri yönetimi" yazi="Personel girişi, üye kaydı ve günlük işlemler işletmeye ayrılan adreste kalır." />
+          </div>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-brand-card/60 p-6 rounded-2xl border border-brand-border hover:border-brand-gold/40 transition-all">
             <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center text-xl mb-4">
-              <i className="fa-solid fa-shield-halved" />
+              <i className="fa-solid fa-globe" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-title">Güvenli & Stabil Altyapı</h3>
+            <h3 className="text-lg font-bold text-white mb-2 font-title">Kendi internet adresiniz</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Yazılımlarımız en son güvenlik standartlarına uygun olarak kodlanır.
-              Kesintisiz performans ve veri güvenliği önceliğimizdir.
+              Program bilgisayara kurulmaz. İş yeri, personel ve üyeler tarayıcıdan
+              size ayrılan internet adresine girerek çalışır.
             </p>
           </div>
           <div className="bg-brand-card/60 p-6 rounded-2xl border border-brand-border hover:border-brand-cyan/40 transition-all">
             <div className="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl mb-4">
-              <i className="fa-solid fa-wand-magic-sparkles" />
+              <i className="fa-solid fa-users" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-title">Özel Terzi Usulü Çözümler</h3>
+            <h3 className="text-lg font-bold text-white mb-2 font-title">Sektöre göre panel</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Hazır şablonlar yerine doğrudan iş süreçlerinize özel fonksiyonel ve
-              modern yazılımlar tasarlayıp geliştiriyoruz.
+              Kurs, otel ve iş yeri yönetiminde kayıt, yoklama, görevli, aidat ve
+              kasa aynı web panelinde, işletmenin ihtiyacına göre açılır.
             </p>
           </div>
           <div className="bg-brand-card/60 p-6 rounded-2xl border border-brand-border hover:border-brand-gold/40 transition-all">
             <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center text-xl mb-4">
-              <i className="fa-solid fa-headset" />
+              <i className="fa-solid fa-id-card" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-title">Devamlı Destek & Güncelleme</h3>
+            <h3 className="text-lg font-bold text-white mb-2 font-title">Üye ve personel girişi</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Yazılımın tesliminden sonra da yanınızdayız. Düzenli güncellemeler ve
-              teknik destek ile sistemlerinizi güncel tutuyoruz.
+              Üye kendi kaydını ve ödemelerini görür. Personel girişi iş yeri
+              yönetim programına bağlanır.
             </p>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function Cozum({ no, ikon, baslik, yazi }) {
+  return (
+    <article className="bg-brand-card rounded-2xl border border-brand-border p-6">
+      <div className="flex items-center justify-between mb-5">
+        <span className="text-xs font-title tracking-widest text-brand-gold">{no}</span>
+        <i className={`fa-solid ${ikon} text-brand-cyan`} />
+      </div>
+      <h3 className="text-lg font-bold text-white font-title mb-2">{baslik}</h3>
+      <p className="text-sm text-gray-400 leading-relaxed">{yazi}</p>
+    </article>
   );
 }

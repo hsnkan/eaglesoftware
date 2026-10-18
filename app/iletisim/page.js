@@ -14,8 +14,8 @@ export default function IletisimPage() {
             Bizimle <span className="gold-gradient-text">İletişime Geçin</span>
           </h2>
           <p className="text-gray-400 mt-3 text-sm sm:text-base">
-            Projeleriniz, özel yazılım talepleriniz veya demolarımız için günün
-            her saati bize ulaşabilirsiniz.
+            Kurs, otel veya iş yeri paneliniz için internet adresi, demo ve modül
+            seçimi hakkında bize yazabilirsiniz.
           </p>
         </div>
 
@@ -53,8 +53,8 @@ export default function IletisimPage() {
                   <i className="fa-solid fa-laptop-code" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-400 uppercase font-mono tracking-wider">Hizmet Modeli</div>
-                  <div className="text-sm font-bold text-white font-title">FREELANCE YAZILIM HİZMETLERİ</div>
+                  <div className="text-xs text-gray-400 uppercase font-mono tracking-wider">Şirket</div>
+                  <div className="text-sm font-bold text-white font-title">KURUMSAL YAZILIM ÇÖZÜMLERİ</div>
                 </div>
               </div>
             </div>

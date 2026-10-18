@@ -2,9 +2,11 @@
 
 Şirket sitesi: eaglesoftware.com.tr
 
+Eagle Software kurumsal sitesi. Web tabanlı iş yeri yönetimi; kurs, otel ve iş yeri çözümleri.
+
 Sayfalar: Ana sayfa, Misyon, Vizyon, Ürünler, İletişim.
 
-Ürün: Eagle Üye Sistemi. Deneme müşteri `ayse@ornek.com` / `musteri123`.
+Ürün: Eagle İş Yeri Paneli. Üye denemesi `ayse@ornek.com` / `musteri123`.
 
 ```bash
 npm install

@@ -10,8 +10,8 @@ export default function Hakkimizda() {
             Eagle Software <span className="gold-gradient-text">Hakkında</span>
           </h2>
           <p className="text-gray-400 mt-3 text-sm sm:text-base">
-            Teknolojiye yön veren tutkumuz, disiplinli çalışma anlayışımız ve
-            yüksek kalite standartlarımızla yazılım dünyasındayız.
+            Eagle Software, işletmelere web tabanlı yönetim çözümleri sunan
+            bir yazılım şirketidir.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function Hakkimizda() {
             </div>
             <h3 className="text-2xl font-bold font-title text-white mb-4">Vizyonumuz</h3>
             <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-              Freelance yazılım ekosisteminde yenilikçi teknolojilere öncülük eden,
+              Kurumsal yazılım alanında yenilikçi teknolojilere öncülük eden,
               ulusal ve uluslararası ölçekte tanınan, kalitesiyle referans gösterilen
               ve teknolojik gelişmeleri anında ürünlerine entegre edebilen lider bir
               yazılım markası olmaktır.
@@ -49,10 +49,10 @@ export default function Hakkimizda() {
             Temel <span className="gold-gradient-text">Çalışma İlkelerimiz</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Ilke ikon="fa-code-merge" renk="gold" baslik="Temiz Kod" yazi="Sürdürülebilir, modüler ve kolay geliştirilebilir altyapı." />
-            <Ilke ikon="fa-clock" renk="cyan" baslik="Zamanında Teslim" yazi="Belirlenen takvime sadık kalarak eksiksiz teslimat." />
-            <Ilke ikon="fa-user-shield" renk="gold" baslik="Gizlilik & Güvenlik" yazi="Proje fikirleriniz ve verileriniz tam güvence altında." />
-            <Ilke ikon="fa-handshake" renk="cyan" baslik="Sürekli İletişim" yazi="Geliştirme sürecinin her aşamasında şeffaf bilgilendirme." />
+            <Ilke ikon="fa-globe" renk="gold" baslik="Kendi adresi" yazi="Her iş yeri kendi internet adresinden açılır." />
+            <Ilke ikon="fa-building" renk="cyan" baslik="Şubeler ayrı" yazi="Bir şubenin kaydı diğerinin paneline karışmaz." />
+            <Ilke ikon="fa-user-shield" renk="gold" baslik="Kayıt güvende" yazi="Öğrenci, ödeme ve yoklama kayıtları iş yerine aittir." />
+            <Ilke ikon="fa-handshake" renk="cyan" baslik="Kurulum birlikte" yazi="Adres, logo ve açılacak modüller iş yeriyle netleşir." />
           </div>
         </div>
       </div>
