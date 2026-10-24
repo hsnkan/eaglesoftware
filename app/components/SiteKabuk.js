@@ -21,6 +21,10 @@ export default function SiteKabuk({ children }) {
   const pathname = usePathname();
   const [acik, setAcik] = useState(false);
 
+  if (pathname === "/restoran") {
+    return <main className="flex-grow">{children}</main>;
+  }
+
   return (
     <>
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">

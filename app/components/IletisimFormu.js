@@ -42,16 +42,10 @@ export default function IletisimFormu() {
       <div>
         <label className="block text-xs font-medium text-gray-300 mb-2">İlgilendiğiniz Hizmet / Ürün</label>
         <select name="hizmet" className="w-full px-4 py-3 rounded-xl bg-brand-dark border border-brand-border focus:border-brand-gold focus:outline-none text-sm text-gray-300">
-          <option>Web tabanlı iş yeri paneli</option>
-          <option>Kurs yönetimi</option>
-          <option>Otel yönetimi</option>
-          <option>İş yeri yönetimi</option>
-          <option>Öğrenci Yönetimi</option>
-          <option>NFC / Kartlı Yoklama</option>
-          <option>Aidat ve Kasa</option>
-          <option>Görevli Takip</option>
-          <option>Üye Oturumu</option>
-          <option>İş yerime özel internet adresi</option>
+          <option>Kurs Yönetim Programı</option>
+          <option>Restoran Menü QR Programı</option>
+          <option>İş Yeri Randevu Sistemi</option>
+          <option>İhtiyaçlarınıza Göre Tasarımlar</option>
         </select>
       </div>
       <div>

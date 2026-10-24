@@ -15,9 +15,9 @@ export default function HomePage() {
               <span className="gold-gradient-text">KENDİ İNTERNET ADRESİNDE</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              <strong>Eagle Software</strong>, kurs, otel ve iş yeri yönetimi için
-              kurumsal web çözümleri sunar. Her işletme kendi internet adresinden
-              kayıt, yoklama, görevli ve kasa süreçlerini yönetir.
+              <strong>Eagle Software</strong>, kurs yönetimi, restoran menü QR,
+              iş yeri randevu ve ihtiyaca göre tasarımlar sunar. Her işletme kendi
+              internet adresinden çalışır.
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -74,10 +74,11 @@ export default function HomePage() {
               Aynı kurumsal altyapı, işletmenin işine göre açılır. Her çözüm kendi internet adresinde çalışır.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Cozum no="01" ikon="fa-graduation-cap" baslik="Kurs yönetimi" yazi="Öğrenci kaydı, grup, yoklama, aidat ve üye ekranı tek panelde toplanır." />
-            <Cozum no="02" ikon="fa-hotel" baslik="Otel yönetimi" yazi="Konaklama işletmesinin kayıt, görevli ve kasa işleri kendi adresindeki panelde yürür." />
-            <Cozum no="03" ikon="fa-briefcase" baslik="İş yeri yönetimi" yazi="Personel girişi, üye kaydı ve günlük işlemler işletmeye ayrılan adreste kalır." />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Cozum no="01" ikon="fa-graduation-cap" baslik="Kurs Yönetim Programı" yazi="Öğrenci, yoklama, görevli ve kasa kayıtları kursun kendi internet adresinde toplanır." />
+            <Cozum no="02" href="/restoran" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
+            <Cozum no="03" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
+            <Cozum no="04" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="Hazır ürüne sığmayan işler, işletmenin kendi sürecine göre ekran ve internet adresi olarak tasarlanır." />
           </div>
         </div>
 
@@ -98,8 +99,8 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-2 font-title">Sektöre göre panel</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Kurs, otel ve iş yeri yönetiminde kayıt, yoklama, görevli, aidat ve
-              kasa aynı web panelinde, işletmenin ihtiyacına göre açılır.
+              Kurs, restoran ve randevu ihtiyacına göre kayıt, menü veya randevu
+              ekranı kendi internet adresinde açılır.
             </p>
           </div>
           <div className="bg-brand-card/60 p-6 rounded-2xl border border-brand-border hover:border-brand-gold/40 transition-all">
@@ -118,9 +119,9 @@ export default function HomePage() {
   );
 }
 
-function Cozum({ no, ikon, baslik, yazi }) {
-  return (
-    <article className="bg-brand-card rounded-2xl border border-brand-border p-6">
+function Cozum({ no, ikon, baslik, yazi, href }) {
+  const kart = (
+    <article className="bg-brand-card rounded-2xl border border-brand-border p-6 h-full">
       <div className="flex items-center justify-between mb-5">
         <span className="text-xs font-title tracking-widest text-brand-gold">{no}</span>
         <i className={`fa-solid ${ikon} text-brand-cyan`} />
@@ -128,5 +129,11 @@ function Cozum({ no, ikon, baslik, yazi }) {
       <h3 className="text-lg font-bold text-white font-title mb-2">{baslik}</h3>
       <p className="text-sm text-gray-400 leading-relaxed">{yazi}</p>
     </article>
+  );
+  if (!href) return kart;
+  return (
+    <Link href={href} className="block h-full hover:brightness-110 transition-all">
+      {kart}
+    </Link>
   );
 }

@@ -11,12 +11,11 @@ export default function UrunlerPage() {
             <i className="fa-solid fa-layer-group" /> Kurumsal çözümler
           </div>
           <h2 className="text-3xl sm:text-4xl font-black font-title text-white">
-            İnternet adresinden açılan <span className="gold-gradient-text">yönetim modülleri</span>
+            Ürün <span className="gold-gradient-text">listesi</span>
           </h2>
           <p className="text-gray-400 mt-3 text-sm sm:text-base">
-            Eagle Software, işletmelere kendi internet adresinden açılan yönetim
-            paneli sunar. Kurs, otel ve iş yeri çözümlerinde kayıt, yoklama, kasa
-            ve üye ekranları ihtiyaca göre açılır.
+            Kurs yönetim programını listedeki adresten deneyebilirsiniz. Restoran
+            menü QR, iş yeri randevu sistemi ve ihtiyaca göre tasarımlar diğer ürünlerdir.
           </p>
         </div>
         <UrunListesi />

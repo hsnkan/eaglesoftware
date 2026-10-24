@@ -4,7 +4,7 @@ import SiteKabuk from "./components/SiteKabuk";
 export const metadata = {
   title: "EAGLE SOFTWARE - Kurumsal Yazılım Çözümleri",
   description:
-    "Eagle Software, kurs, otel ve iş yeri yönetimi için internet adresinden açılan kurumsal web çözümleri sunar.",
+    "Eagle Software, kurs yönetimi, restoran menü QR, iş yeri randevu ve ihtiyaca göre tasarımlar sunar.",
   icons: { icon: "/eagle-logo.png" },
 };
 
