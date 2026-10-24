@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TasarimBilgiFormu from "./TasarimBilgiFormu";
 
 const URUNLER = [
   {
@@ -31,7 +32,8 @@ const URUNLER = [
     no: "04",
     ikon: "fa-pen-ruler",
     baslik: "İhtiyaçlarınıza Göre Tasarımlar",
-    yazi: "İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır. Hazır ürüne sığmayan işler bu kalemde ele alınır.",
+    yazi: "İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır.",
+    bilgiFormu: true,
   },
 ];
 
@@ -66,7 +68,9 @@ export default function UrunListesi() {
                 </a>
               ) : null}
 
-              {urun.icLink ? (
+              {urun.bilgiFormu ? (
+                <TasarimBilgiFormu />
+              ) : urun.icLink ? (
                 <Link
                   href={urun.icLink}
                   className="inline-flex mt-4 px-4 py-2 rounded-lg text-xs font-bold font-title bg-brand-gold/20 text-brand-gold hover:bg-brand-gold hover:text-black transition-all"

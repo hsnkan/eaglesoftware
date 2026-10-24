@@ -78,7 +78,7 @@ export default function HomePage() {
             <Cozum no="01" ikon="fa-graduation-cap" baslik="Kurs Yönetim Programı" yazi="Öğrenci, yoklama, görevli ve kasa kayıtları kursun kendi internet adresinde toplanır." />
             <Cozum no="02" href="/restoran" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
             <Cozum no="03" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
-            <Cozum no="04" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="Hazır ürüne sığmayan işler, işletmenin kendi sürecine göre ekran ve internet adresi olarak tasarlanır." />
+            <Cozum no="04" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır." />
           </div>
         </div>
 
