@@ -6,7 +6,7 @@ Eagle Software kurumsal sitesi. Web tabanlı iş yeri yönetimi; kurs, otel ve i
 
 Sayfalar: Ana sayfa, Misyon, Vizyon, Ürünler, İletişim.
 
-Ürünler: Kurs Yönetim Programı (görünen adres www.işyeriadresiniz.com.tr, hedef https://eagle-software-global.vercel.app/), Restoran Menü QR, İş Yeri Randevu Sistemi, İhtiyaçlarınıza Göre Tasarımlar.
+Ürünler: Kurs Yönetim Programı, Restoran menü (https://restoran-menu-three.vercel.app), İş yeri randevu (https://is-yeri-randevu.vercel.app), İhtiyaçlarınıza Göre Tasarımlar.
 
 ```bash
 npm install

@@ -76,8 +76,8 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Cozum no="01" ikon="fa-graduation-cap" baslik="Kurs Yönetim Programı" yazi="Öğrenci, yoklama, görevli ve kasa kayıtları kursun kendi internet adresinde toplanır." />
-            <Cozum no="02" href="/restoran" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
-            <Cozum no="03" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
+            <Cozum no="02" href="https://restoran-menu-three.vercel.app" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
+            <Cozum no="03" href="https://is-yeri-randevu.vercel.app" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
             <Cozum no="04" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır." />
           </div>
         </div>
@@ -131,6 +131,14 @@ function Cozum({ no, ikon, baslik, yazi, href }) {
     </article>
   );
   if (!href) return kart;
+  const disari = href.startsWith("http");
+  if (disari) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className="block h-full hover:brightness-110 transition-all">
+        {kart}
+      </a>
+    );
+  }
   return (
     <Link href={href} className="block h-full hover:brightness-110 transition-all">
       {kart}

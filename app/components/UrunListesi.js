@@ -1,5 +1,5 @@
-import Link from "next/link";
 import TasarimBilgiFormu from "./TasarimBilgiFormu";
+import UrunKarekod from "./UrunKarekod";
 
 const URUNLER = [
   {
@@ -19,14 +19,16 @@ const URUNLER = [
     ikon: "fa-qrcode",
     baslik: "Restoran Menü QR Programı",
     yazi: "Müşteri masadaki karekodu okutunca restoranın güncel menüsünü açar. Ürün, fiyat ve kategori restoran panelinden düzenlenir.",
-    icLink: "/restoran",
-    icYazi: "Menüyü aç",
+    baglanti: "https://restoran-menu-three.vercel.app",
+    baglantiAd: "MENÜ",
   },
   {
     no: "03",
     ikon: "fa-calendar-check",
     baslik: "İş Yeri Randevu Sistemi",
     yazi: "Müşteri gün ve saat seçerek randevu alır. İş yeri doluluk, personel ve randevu listesini kendi panelinden yönetir.",
+    baglanti: "https://is-yeri-randevu.vercel.app",
+    baglantiAd: "RANDEVU",
   },
   {
     no: "04",
@@ -68,15 +70,20 @@ export default function UrunListesi() {
                 </a>
               ) : null}
 
-              {urun.bilgiFormu ? (
+              {urun.baglanti ? (
+                <div className="mt-4 flex items-center gap-4">
+                  <a
+                    href={urun.baglanti}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-title text-sm font-bold tracking-[0.22em] text-brand-gold hover:text-white"
+                  >
+                    {urun.baglantiAd}
+                  </a>
+                  <UrunKarekod adres={urun.baglanti} />
+                </div>
+              ) : urun.bilgiFormu ? (
                 <TasarimBilgiFormu />
-              ) : urun.icLink ? (
-                <Link
-                  href={urun.icLink}
-                  className="inline-flex mt-4 px-4 py-2 rounded-lg text-xs font-bold font-title bg-brand-gold/20 text-brand-gold hover:bg-brand-gold hover:text-black transition-all"
-                >
-                  {urun.icYazi}
-                </Link>
               ) : urun.girisler ? (
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {urun.girisler.map((g) => (
