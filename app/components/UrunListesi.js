@@ -8,7 +8,6 @@ const URUNLER = [
     baslik: "Kurs Yönetim Programı",
     yazi: "Kurs işletmesi öğrenci, yoklama, görevli ve kasa kayıtlarını kendi internet adresinden yönetir. Aşağıdaki adresten ürünü deneyebilirsiniz.",
     test: "https://eagle-software-global.vercel.app/",
-    gorunen: "www.işyeriadresiniz.com.tr",
     girisler: [
       { rol: "İş yeri sahibi", kullanici: "eaglesahip", sifre: "Eaglesahip2026!" },
       { rol: "Sekreter oturumu", kullanici: "eagle", sifre: "eagle2026!" },
