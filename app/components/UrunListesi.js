@@ -7,7 +7,7 @@ const URUNLER = [
     ikon: "fa-graduation-cap",
     baslik: "Kurs Yönetim Programı",
     yazi: "Kurs işletmesi öğrenci, yoklama, görevli ve kasa kayıtlarını kendi internet adresinden yönetir. Aşağıdaki adresten ürünü deneyebilirsiniz.",
-    test: "https://eagle-software-global.vercel.app/",
+    test: "https://kurs.eaglesoftware.com.tr",
     girisler: [
       { rol: "İş yeri sahibi", kullanici: "eaglesahip", sifre: "Eaglesahip2026!" },
       { rol: "Sekreter oturumu", kullanici: "eagle", sifre: "eagle2026!" },
@@ -18,7 +18,7 @@ const URUNLER = [
     ikon: "fa-qrcode",
     baslik: "Restoran Menü QR Programı",
     yazi: "Müşteri masadaki karekodu okutunca restoranın güncel menüsünü açar. Ürün, fiyat ve kategori restoran panelinden düzenlenir.",
-    baglanti: "https://restoran-menu-three.vercel.app",
+    baglanti: "https://menu.eaglesoftware.com.tr",
     baglantiAd: "MENÜ",
   },
   {
@@ -26,7 +26,7 @@ const URUNLER = [
     ikon: "fa-calendar-check",
     baslik: "İş Yeri Randevu Sistemi",
     yazi: "Müşteri gün ve saat seçerek randevu alır. İş yeri doluluk, personel ve randevu listesini kendi panelinden yönetir.",
-    baglanti: "https://is-yeri-randevu.vercel.app",
+    baglanti: "https://randevu.eaglesoftware.com.tr",
     baglantiAd: "RANDEVU",
   },
   {

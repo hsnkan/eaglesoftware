@@ -12,7 +12,7 @@ export default async function PersonelPage() {
   const kullanici = kullaniciBul(oturum.id);
   if (!kullanici) redirect("/");
 
-  const program = process.env.ISYERI_PROGRAM_URL || "https://eagle-software-global.vercel.app";
+  const program = process.env.ISYERI_PROGRAM_URL || "https://kurs.eaglesoftware.com.tr";
 
   return (
     <main style={{ minHeight: "100vh", padding: 24 }}>
