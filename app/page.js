@@ -78,7 +78,7 @@ export default function HomePage() {
             <Cozum no="01" href="https://kurs.eaglesoftware.com.tr" ikon="fa-graduation-cap" baslik="Kurs Yönetim Programı" yazi="Öğrenci, yoklama, görevli ve kasa kayıtları kursun kendi internet adresinde toplanır." />
             <Cozum no="02" href="https://menu.eaglesoftware.com.tr" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
             <Cozum no="03" href="https://randevu.eaglesoftware.com.tr" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
-            <Cozum no="04" href="/urunler" ikon="fa-building" baslik="Kurum İnternet Sitesi" yazi="Kurumun vitrini kendi adresinde durur. Üye kendi sayfasına, yönetici ve çalışan yönetim sayfasına girer." />
+            <Cozum no="04" href="https://kurum.eaglesoftware.com.tr" ikon="fa-building" baslik="Kurum İnternet Sitesi" yazi="Kurumun vitrini kendi adresinde durur. Üye kendi sayfasına, yönetici ve çalışan yönetim sayfasına girer." />
             <Cozum no="05" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır." />
           </div>
         </div>

@@ -33,7 +33,13 @@ const URUNLER = [
     no: "04",
     ikon: "fa-building",
     baslik: "Kurum İnternet Sitesi",
-    yazi: "Kurumun tanıtım vitrini kendi internet adresinde durur. Ziyaretçi kullanıcı adı ve şifre ile kendi sayfasına girer. Yönetici ve çalışan aynı kapıdan yönetim sayfasına geçer ve vitrini oradan değiştirir.",
+    yazi: "Kurumun tanıtım vitrini kendi internet adresinde durur. Ziyaretçi kullanıcı adı ve şifre ile kendi sayfasına girer. Yönetici ve çalışan aynı kapıdan yönetim sayfasına geçer ve vitrini oradan değiştirir. Aşağıdaki adresten deneyebilirsiniz.",
+    test: "https://kurum.eaglesoftware.com.tr",
+    girisler: [
+      { rol: "Üye", kullanici: "uye", sifre: "Uye2026!" },
+      { rol: "Yönetici", kullanici: "yonetici", sifre: "Yonetici2026!" },
+      { rol: "Çalışan", kullanici: "calisan", sifre: "Calisan2026!" },
+    ],
   },
   {
     no: "05",
