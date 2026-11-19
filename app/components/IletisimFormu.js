@@ -45,6 +45,7 @@ export default function IletisimFormu() {
           <option>Kurs Yönetim Programı</option>
           <option>Restoran Menü QR Programı</option>
           <option>İş Yeri Randevu Sistemi</option>
+          <option>Kurum İnternet Sitesi</option>
           <option>İhtiyaçlarınıza Göre Tasarımlar</option>
         </select>
       </div>

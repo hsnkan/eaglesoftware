@@ -16,8 +16,8 @@ export default function HomePage() {
             </h1>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
               <strong>Eagle Software</strong>, kurs yönetimi, restoran menü QR,
-              iş yeri randevu ve ihtiyaca göre tasarımlar sunar. Her işletme kendi
-              internet adresinden çalışır.
+              iş yeri randevu, kurum internet sitesi ve ihtiyaca göre tasarımlar
+              sunar. Her işletme kendi internet adresinden çalışır.
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <Link
@@ -78,7 +78,8 @@ export default function HomePage() {
             <Cozum no="01" href="https://kurs.eaglesoftware.com.tr" ikon="fa-graduation-cap" baslik="Kurs Yönetim Programı" yazi="Öğrenci, yoklama, görevli ve kasa kayıtları kursun kendi internet adresinde toplanır." />
             <Cozum no="02" href="https://menu.eaglesoftware.com.tr" ikon="fa-qrcode" baslik="Restoran Menü QR" yazi="Müşteri masadaki karekodla güncel menüyü açar. Fiyat ve ürün restoran panelinden düzenlenir." />
             <Cozum no="03" href="https://randevu.eaglesoftware.com.tr" ikon="fa-calendar-check" baslik="İş Yeri Randevu Sistemi" yazi="Müşteri gün ve saat seçer. İş yeri doluluk ve randevu listesini panelden yönetir." />
-            <Cozum no="04" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır." />
+            <Cozum no="04" href="/urunler" ikon="fa-building" baslik="Kurum İnternet Sitesi" yazi="Kurumun vitrini kendi adresinde durur. Üye kendi sayfasına, yönetici ve çalışan yönetim sayfasına girer." />
+            <Cozum no="05" ikon="fa-pen-ruler" baslik="İhtiyaçlarınıza Göre Tasarımlar" yazi="İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır." />
           </div>
         </div>
 
@@ -99,8 +100,8 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-2 font-title">Sektöre göre panel</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Kurs, restoran ve randevu ihtiyacına göre kayıt, menü veya randevu
-              ekranı kendi internet adresinde açılır.
+              Kurs, restoran, randevu ve kurum sitesi ihtiyacına göre kayıt, menü
+              veya vitrin ekranı kendi internet adresinde açılır.
             </p>
           </div>
           <div className="bg-brand-card/60 p-6 rounded-2xl border border-brand-border hover:border-brand-gold/40 transition-all">

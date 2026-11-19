@@ -31,6 +31,12 @@ const URUNLER = [
   },
   {
     no: "04",
+    ikon: "fa-building",
+    baslik: "Kurum İnternet Sitesi",
+    yazi: "Kurumun tanıtım vitrini kendi internet adresinde durur. Ziyaretçi kullanıcı adı ve şifre ile kendi sayfasına girer. Yönetici ve çalışan aynı kapıdan yönetim sayfasına geçer ve vitrini oradan değiştirir.",
+  },
+  {
+    no: "05",
     ikon: "fa-pen-ruler",
     baslik: "İhtiyaçlarınıza Göre Tasarımlar",
     yazi: "İşletmenin kendi sürecine göre ekran, akış ve internet adresi birlikte tasarlanır.",

@@ -15,7 +15,8 @@ export default function UrunlerPage() {
           </h2>
           <p className="text-gray-400 mt-3 text-sm sm:text-base">
             Kurs yönetim programını listedeki adresten deneyebilirsiniz. Restoran
-            menü QR, iş yeri randevu sistemi ve ihtiyaca göre tasarımlar diğer ürünlerdir.
+            menü QR, iş yeri randevu sistemi, kurum internet sitesi ve ihtiyaca
+            göre tasarımlar diğer ürünlerdir.
           </p>
         </div>
         <UrunListesi />
